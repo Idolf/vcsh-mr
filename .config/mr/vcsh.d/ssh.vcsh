@@ -1,5 +1,7 @@
 [$HOME/.config/vcsh/repo.d/ssh.git]
-checkout = vcsh clone 'git.pwnies.dk:IdolfHatler/vcsh-ssh.git' 'ssh'
+checkout = vcsh clone 'git.pwnies.dk:IdolfHatler/vcsh-ssh.git' 'ssh' && \
+           vcsh ssh reset --hard origin/master && \
+           vcsh ssh checkout -f $HOME
 update   = vcsh ssh pull
 push     = vcsh ssh push
 status   = vcsh ssh status

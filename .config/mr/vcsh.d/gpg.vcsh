@@ -1,5 +1,7 @@
 [$HOME/.config/vcsh/repo.d/gpg.git]
-checkout = vcsh clone 'git.pwnies.dk:IdolfHatler/vcsh-gpg.git' 'gpg'
+checkout = vcsh clone 'git.pwnies.dk:IdolfHatler/vcsh-gpg.git' 'gpg' && \
+           vcsh gpg reset --hard origin/master && \
+           vcsh gpg checkout -f $HOME
 update   = vcsh gpg pull
 push     = vcsh gpg push
 status   = vcsh gpg status

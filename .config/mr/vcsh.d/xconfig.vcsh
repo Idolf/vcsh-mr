@@ -1,5 +1,7 @@
 [$HOME/.config/vcsh/repo.d/xconfig.git]
-checkout = vcsh clone 'git.pwnies.dk:IdolfHatler/vcsh-xconfig.git' 'xconfig'
+checkout = vcsh clone 'git.pwnies.dk:IdolfHatler/vcsh-xconfig.git' 'xconfig' && \
+           vcsh xconfig reset --hard origin/master && \
+           vcsh xconfig checkout -f $HOME
 update   = vcsh xconfig pull
 push     = vcsh xconfig push
 status   = vcsh xconfig status

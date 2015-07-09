@@ -1,5 +1,7 @@
 [$HOME/.config/vcsh/repo.d/net.git]
-checkout = vcsh clone 'git.pwnies.dk:IdolfHatler/vcsh-net.git' 'net'
+checkout = vcsh clone 'git.pwnies.dk:IdolfHatler/vcsh-net.git' 'net' && \
+           vcsh net reset --hard origin/master && \
+           vcsh net checkout -f $HOME
 update   = vcsh net pull
 push     = vcsh net push
 status   = vcsh net status
