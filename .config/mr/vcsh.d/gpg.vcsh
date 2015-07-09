@@ -1,5 +1,5 @@
 [$HOME/.config/vcsh/repo.d/gpg.git]
-checkout = vcsh clone 'odroid-home:vcsh/gpg' 'gpg' && \
+checkout = vcsh clone 'odroid-home:vcsh/gpg' 'gpg' ; \
            vcsh gpg reset --hard origin/master && \
            vcsh gpg checkout -f $HOME
 update   = vcsh gpg pull

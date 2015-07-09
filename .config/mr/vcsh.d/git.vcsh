@@ -1,5 +1,5 @@
 [$HOME/.config/vcsh/repo.d/git.git]
-checkout = vcsh clone 'git@git.pwnies.dk:IdolfHatler/vcsh-git.git' 'git' && \
+checkout = vcsh clone 'git@git.pwnies.dk:IdolfHatler/vcsh-git.git' 'git' ; \
            vcsh git reset --hard origin/master && \
            vcsh git checkout -f $HOME
 update   = vcsh git pull

@@ -1,5 +1,5 @@
 [$HOME/.config/vcsh/repo.d/ssh.git]
-checkout = vcsh clone 'odroid-home:vcsh/ssh' 'ssh' && \
+checkout = vcsh clone 'odroid-home:vcsh/ssh' 'ssh' ; \
            vcsh ssh reset --hard origin/master && \
            vcsh ssh checkout -f $HOME
 update   = vcsh ssh pull
