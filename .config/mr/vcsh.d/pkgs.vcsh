@@ -1,6 +1,6 @@
 [$HOME/.config/vcsh/repo.d/pkgs.git]
 checkout = vcsh clone 'git@git.pwnies.dk:IdolfHatler/vcsh-pkgs.git' 'pkgs' ; \
-           vcsh pkgs reset --hard origin/master && \
+           vcsh pkgs reset --hard origin/master ; \
            vcsh pkgs checkout -f $HOME
 update   = vcsh pkgs pull
 push     = vcsh pkgs push

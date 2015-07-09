@@ -1,6 +1,6 @@
 [$HOME/.config/vcsh/repo.d/autorandr.git]
 checkout = vcsh clone 'odroid-home:vcsh/autorandr' 'autorandr' ; \
-           vcsh autorandr reset --hard origin/master && \
+           vcsh autorandr reset --hard origin/master ; \
            vcsh autorandr checkout -f $HOME
 update   = vcsh autorandr pull
 push     = vcsh autorandr push

@@ -1,6 +1,6 @@
 [$HOME/.config/vcsh/repo.d/net.git]
 checkout = vcsh clone 'odroid-home:vcsh/net' 'net' ; \
-           vcsh net reset --hard origin/master && \
+           vcsh net reset --hard origin/master ; \
            vcsh net checkout -f $HOME
 update   = vcsh net pull
 push     = vcsh net push
