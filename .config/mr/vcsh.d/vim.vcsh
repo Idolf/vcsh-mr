@@ -1,7 +1,7 @@
 [$HOME/.config/vcsh/repo.d/vim.git]
-checkout = vcsh clone 'git@git.pwnies.dk:IdolfHatler/vcsh-vim.git' 'vim' ; \
-           vcsh vim reset --hard origin/master ; \
-           vcsh vim checkout -f $HOME
+checkout = vcsh clone 'git@git.pwnies.dk:IdolfHatler/vcsh-vim.git' 'vim' || \
+           (vcsh vim reset --hard origin/master && \
+           vcsh vim checkout -f $HOME )
 update   = vcsh vim pull
 push     = vcsh vim push
 status   = vcsh vim status

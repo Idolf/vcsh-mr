@@ -1,7 +1,7 @@
 [$HOME/.config/vcsh/repo.d/ipython.git]
-checkout = vcsh clone 'git@git.pwnies.dk:IdolfHatler/vcsh-ipython.git' 'ipython' ; \
-           vcsh ipython reset --hard origin/master ; \
-           vcsh ipython checkout -f $HOME
+checkout = vcsh clone 'git@git.pwnies.dk:IdolfHatler/vcsh-ipython.git' 'ipython' || \
+           (vcsh ipython reset --hard origin/master && \
+           vcsh ipython checkout -f $HOME )
 update   = vcsh ipython pull
 push     = vcsh ipython push
 status   = vcsh ipython status

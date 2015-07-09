@@ -1,7 +1,7 @@
 [$HOME/.config/vcsh/repo.d/emacs.git]
-checkout = vcsh clone 'git@git.pwnies.dk:IdolfHatler/vcsh-emacs.git' 'emacs' ; \
-           vcsh emacs reset --hard origin/master ; \
-           vcsh emacs checkout -f $HOME
+checkout = vcsh clone 'git@git.pwnies.dk:IdolfHatler/vcsh-emacs.git' 'emacs' || \
+           (vcsh emacs reset --hard origin/master && \
+           vcsh emacs checkout -f $HOME )
 update   = vcsh emacs pull
 push     = vcsh emacs push
 status   = vcsh emacs status
