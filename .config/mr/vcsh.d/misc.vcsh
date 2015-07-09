@@ -1,0 +1,7 @@
+[$HOME/.config/vcsh/repo.d/misc.git]
+checkout = vcsh clone 'git.pwnies.dk:IdolfHatler/vcsh-misc.git' 'misc'
+update   = vcsh autorandr pull
+push     = vcsh autorandr push
+status   = vcsh autorandr status
+gc       = vcsh autorandr gc
+

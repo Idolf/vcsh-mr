@@ -1,0 +1,2 @@
+[git/net]
+checkout = git clone 'git@github.com:Idolf/net.git' 'net'

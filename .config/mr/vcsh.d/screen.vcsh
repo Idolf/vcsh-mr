@@ -1,0 +1,7 @@
+[$HOME/.config/vcsh/repo.d/screen.git]
+checkout = vcsh clone 'git.pwnies.dk:IdolfHatler/vcsh-screen.git' 'screen'
+update   = vcsh autorandr pull
+push     = vcsh autorandr push
+status   = vcsh autorandr status
+gc       = vcsh autorandr gc
+

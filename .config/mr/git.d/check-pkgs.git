@@ -1,0 +1,2 @@
+[git/check-pkgs]
+checkout = git clone 'git@github.com:Idolf/check-pkgs.git' 'check-pkgs'
