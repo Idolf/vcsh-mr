@@ -1,2 +1,2 @@
 [git/pwntools]
-checkout = git clone 'git@github.com:Gallopsled/pwntools.git' 'pwntools' && cd pwntools && sudo pip install -e . && sudo chown -R freaken: .
+checkout = git clone 'git@github.com:Gallopsled/pwntools.git' 'pwntools' && cd pwntools && sudo pip install -e . && sudo chown -R $USER: .
