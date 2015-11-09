@@ -1,0 +1,9 @@
+[$HOME/.config/vcsh/repo.d/pidgin.git]
+checkout = vcsh clone 'odroid-home:vcsh/pidgin' 'pidgin' || \
+           (vcsh pidgin reset --hard origin/master && \
+           vcsh pidgin checkout -f $HOME )
+update   = vcsh pidgin pull
+push     = vcsh pidgin push
+status   = vcsh pidgin status
+gc       = vcsh pidgin gc
+
