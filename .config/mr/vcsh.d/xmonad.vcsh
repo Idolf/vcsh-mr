@@ -1,5 +1,5 @@
 [$HOME/.config/vcsh/repo.d/xmonad.git]
-checkout = vcsh clone 'git@git.pwnies.dk:IdolfHatler/vcsh-xmonad.git' 'xmonad' || \
+checkout = vcsh clone 'git@git.pwnies.dk:Idolf/vcsh-xmonad.git' 'xmonad' || \
            (vcsh xmonad reset --hard origin/master && \
            vcsh xmonad checkout -f $HOME )
 update   = vcsh xmonad pull

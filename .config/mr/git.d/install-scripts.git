@@ -1,2 +1,2 @@
 [git/install-scripts]
-checkout = git clone 'git@git.pwnies.dk:IdolfHatler/install-scripts.git' 'install-scripts'
+checkout = git clone 'git@git.pwnies.dk:Idolf/install-scripts.git' 'install-scripts'
