@@ -1,5 +1,5 @@
 [$HOME/.config/vcsh/repo.d/sakura.git]
-checkout = vcsh clone 'git@git.pwnies.dk:Idolf/vcsh-sakura.git' 'sakura' || \
+checkout = vcsh clone 'git@github.com:Idolf/vcsh-sakura.git' 'sakura' || \
            (vcsh sakura reset --hard origin/master && \
            vcsh sakura checkout -f $HOME )
 update   = vcsh sakura pull
