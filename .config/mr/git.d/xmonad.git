@@ -1,2 +1,2 @@
 [git/xmonad]
-checkout = git clone 'git@github.com:Idolf/xmonad-stack.git' xmonad
+checkout = git clone 'git@github.com:Idolf/xmonad.git' xmonad
