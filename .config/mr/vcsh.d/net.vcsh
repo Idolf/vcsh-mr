@@ -1,5 +1,5 @@
 [$HOME/.config/vcsh/repo.d/net.git]
-checkout = vcsh clone 'odroid:vcsh/net' 'net' || \
+checkout = vcsh clone 'odroidu3:/mnt/hades/home/freaken/vcsh/net' 'net' || \
            (vcsh net reset --hard origin/master && \
            vcsh net checkout -f $HOME )
 update   = vcsh net pull
