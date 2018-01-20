@@ -1,2 +1,0 @@
-[git/tubes]
-checkout = git clone 'odroid:git/tubes' 'tubes'
