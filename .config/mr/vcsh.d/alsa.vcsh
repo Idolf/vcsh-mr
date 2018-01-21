@@ -1,0 +1,9 @@
+[$HOME/.config/vcsh/repo.d/alsa.git]
+checkout = vcsh clone 'git@github.com:Idolf/vcsh-alsa.git' 'alsa' || \
+           (vcsh alsa reset --hard origin/master && \
+           vcsh alsa checkout -f $HOME )
+update   = vcsh alsa pull
+push     = vcsh alsa push
+status   = vcsh alsa status
+gc       = vcsh alsa gc
+
