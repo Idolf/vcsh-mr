@@ -1,5 +1,5 @@
 [$HOME/.config/vcsh/repo.d/gpg.git]
-checkout = vcsh clone 'odroidu3:/mnt/hades/home/freaken/vcsh/gpg' 'gpg' || \
+checkout = vcsh clone 'odroidu3:/vcsh/gpg' 'gpg' || \
            (vcsh gpg reset --hard origin/master && \
            vcsh gpg checkout -f $HOME )
 update   = vcsh gpg pull
