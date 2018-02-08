@@ -1,0 +1,9 @@
+[$HOME/.config/vcsh/repo.d/zathura.git]
+checkout = vcsh clone 'git@github.com:Idolf/vcsh-zathura.git' 'zathura' || \
+           (vcsh zathura reset --hard origin/master && \
+           vcsh zathura checkout -f $HOME )
+update   = vcsh zathura pull
+push     = vcsh zathura push
+status   = vcsh zathura status
+gc       = vcsh zathura gc
+
