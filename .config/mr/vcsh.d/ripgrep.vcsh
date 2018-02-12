@@ -1,0 +1,9 @@
+[$HOME/.config/vcsh/repo.d/ripgrep.git]
+checkout = vcsh clone 'git@github.com:Idolf/vcsh-ripgrep.git' 'ripgrep' || \
+           (vcsh ripgrep reset --hard origin/master && \
+           vcsh ripgrep checkout -f $HOME )
+update   = vcsh ripgrep pull
+push     = vcsh ripgrep push
+status   = vcsh ripgrep status
+gc       = vcsh ripgrep gc
+
